@@ -16,7 +16,7 @@ function Employee(name, age, jobTitle) {
 }
 Employee.prototype = Person;
 Employee.prototype.jobGreet = function(){
-	return `Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}.`
+	return `Hello, my name is ${this.eName}, I am ${this.eAge} years old, and my job title is ${this.eJobTitle}.`
 } 
 
 
